@@ -7,6 +7,7 @@ The purpose of this repository is to provide a general root directory for H5P co
 In order to develope course-presentation:
 
 * Clone `h5p-course-presentation`  and `h5p-editor-course-presentation` into this directory
+* in the `h5p-course-presentation` run `npm watch`
 * If you need to alter additional libraries, clone those libraries into the current library
 * run `make run-course-presentation-image`
 
