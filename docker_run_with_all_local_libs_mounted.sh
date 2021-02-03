@@ -9,4 +9,4 @@ done
 
 echo $mounts
 
-docker run -p 8080:80 $mounts $1
+docker run -d -p 8080:80 $mounts $1
