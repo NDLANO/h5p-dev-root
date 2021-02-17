@@ -12,3 +12,6 @@ run-course-presentation-image: build-course-presentation-image
 	# -v ${PWD}/h5p-course-presentation:/var/www/html/sites/default/files/h5p/development/h5p-course-presentation/ \
 	# course-presentation
 	./docker_run_with_all_local_libs_mounted.sh course-presentation
+
+update-all-repos:
+	./update-all-repos.sh
