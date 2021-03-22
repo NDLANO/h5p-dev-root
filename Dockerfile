@@ -19,6 +19,7 @@ RUN if [ -d "h5p-interactive-video" ]; then cd h5p-interactive-video && npm inst
 RUN if [ -d "h5p-open-ended-question" ]; then cd h5p-open-ended-question && npm install && npm run build; fi
 RUN if [ -d "h5p-simple-multiple-choice" ]; then cd h5p-simple-multiple-choice && npm install && npm run build; fi
 RUN if [ -d "h5p-course-presentation" ]; then cd h5p-course-presentation && npm install && npm run build; fi
+RUN if [ -d "h5p-editor-course-presentation" ]; then cd h5p-editor-course-presentation && npm install && npm run build; fi
 
 
 FROM kentis123/drupal-h5p:drupal-7
