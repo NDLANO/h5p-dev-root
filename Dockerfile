@@ -8,7 +8,6 @@ WORKDIR /dev-h5p
 COPY repos .
 RUN while read -r repo; do git clone ${repo}; done < ./repos
 
-
 RUN if [ -d "h5p-editor-color-selector" ]; then cd h5p-editor-color-selector && git checkout b0ae8c941cedcec73df6b186663eae6df8679810; fi
 
 RUN if [ -d "h5p-dialogcards" ]; then cd h5p-dialogcards && npm install && npm run build; fi
@@ -20,6 +19,9 @@ RUN if [ -d "h5p-open-ended-question" ]; then cd h5p-open-ended-question && npm 
 RUN if [ -d "h5p-simple-multiple-choice" ]; then cd h5p-simple-multiple-choice && npm install && npm run build; fi
 RUN if [ -d "h5p-course-presentation" ]; then cd h5p-course-presentation && npm install && npm run build; fi
 RUN if [ -d "h5p-editor-course-presentation" ]; then cd h5p-editor-course-presentation && npm install && npm run build; fi
+RUN if [ -d "h5p-three-image" ]; then cd h5p-three-image && npm install && npm run build; fi
+RUN if [ -d "h5p-editor-three-image" ]; then cd h5p-editor-three-image && npm install && npm run build; fi
+RUN if [ -d "h5p-editor-audio-recorder" ]; then cd h5p-editor-audio-recorder && npm install && npm run build; fi
 
 
 FROM kentis123/drupal-h5p:drupal-7
