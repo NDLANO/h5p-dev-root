@@ -15,9 +15,8 @@ run-course-presentation-image: build-course-presentation-image
 
 build-vt360-image:
 	cp vt360-repos repos
-	cp vt360-contenttype contenttype
 	docker build . -t vt360
-	rm repos contenttype
+	rm repos
 
 run-vt360-image: build-vt360-image
 	./docker_run_with_all_local_libs_mounted.sh vt360
