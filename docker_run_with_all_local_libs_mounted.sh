@@ -1,6 +1,7 @@
 #! /bin/bash
 
 mounts=""
+
 for lib in h5p*/
 do
     echo $lib
@@ -9,4 +10,4 @@ done
 
 echo $mounts
 
-docker run --rm -d -p 8080:80 $mounts $1
+docker run --rm -d -p $2:80 $mounts $1
