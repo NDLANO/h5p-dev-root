@@ -1,5 +1,4 @@
-#! /bin/bash
-
+#!/bin/bash
 mounts=""
 
 for lib in h5p*/
