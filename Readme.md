@@ -20,7 +20,7 @@ See that your folder structure now looks something like this:
   └── ...                               # Other H5P libraries that you want to override
 ```
 
-Now you should be able to edit the cloned libraries and test continuously.
+Now you should be able to edit the cloned libraries and test continuously. In Drupal, the username and passwords are `admin` and `admin` respectively.
 
 ## Note
 
