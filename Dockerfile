@@ -21,6 +21,10 @@ RUN if [ -d "h5p-course-presentation" ]; then cd h5p-course-presentation && npm 
 RUN if [ -d "h5p-three-image" ]; then cd h5p-three-image && npm install && npm run build; fi
 RUN if [ -d "h5p-editor-three-image" ]; then cd h5p-editor-three-image && npm install && npm run build; fi
 RUN if [ -d "h5p-editor-audio-recorder" ]; then cd h5p-editor-audio-recorder && npm install && npm run build; fi
+RUN if [ -d "h5p-editor-timeline" ]; then cd h5p-editor-timeline && npm install && npm run build:prod; fi
+RUN if [ -d "h5p-timeline" ]; then cd h5p-timeline && npm install && npm run build:prod; fi
+
+
 
 FROM kentis123/drupal-h5p:drupal-7
 
