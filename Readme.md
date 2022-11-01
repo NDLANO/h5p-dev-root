@@ -4,19 +4,19 @@ The purpose of this repository is to provide a general root directory for H5P co
 
 ## Usage
 
-In order to develop course-presentation:
+In order to develop interactive-board:
 
-1. Clone `h5p-course-presentation` and `h5p-editor-course-presentation` into this directory
-1. in the `h5p-course-presentation` run `npm watch`
+1. Clone `h5p-interactive-board` and `h5p-editor-interactive-board` into this directory
+1. in the `h5p-interactive-board` run `npm watch`
 1. If you need to alter additional libraries, clone those libraries into the current library
-1. run `make run-course-presentation-image`
+1. run `make run-interactive-board-image`
 
 See that your folder structure now looks something like this:
 
 ```dir
   h5p-dev-root                          # Dev root
-  ├── h5p-course-presentation
-  ├── h5p-editor-course-presentation
+  ├── h5p-interactive-board
+  ├── h5p-editor-interactive-board
   └── ...                               # Other H5P libraries that you want to override
 ```
 
