@@ -1,2 +1,10 @@
 .DS_Store
 h5p-*/
+blob/
+downloadify/
+fontawesome/
+jquery-ui/
+shepherd/
+swfobject/
+tether/
+filesaver/
